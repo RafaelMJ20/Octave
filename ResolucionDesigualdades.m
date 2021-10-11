@@ -1,7 +1,7 @@
  % Octave Script
  % Title          :Resolucion de desigualdades
  % Description    :Script para la resolucion de inecuaciones
- % Author         :Rafael Miranda Jimenez, Diana Hernandez Franco
+ % Author         :Rafael Miranda Jimenez, Diana Hernandez Franco,Maria Guadalupe Martinez Santiago 
  % Date           :20211005
  % Version        :1
  % Usage          :Octave>cd /path/
