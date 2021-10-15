@@ -1,7 +1,7 @@
 % Octave Script
 % Title         :Funcion mínimo material para la alberca
 % Description   :Script del ejercicio de la alberca
-% Author        :Rafael Miranda Jimenez, Maria Guadalupe Martinez Santiago 
+% Author        :Rafael Miranda Jimenez, Maria Guadalupe Martinez Santiago, Diana Hernandez Franco
 % Date          :20211013
 % Version       :1
 % Usage         :octave> /path/alberca
