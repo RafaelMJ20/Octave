@@ -7,30 +7,25 @@
 % Usage         :octave> /path/alberca
 % Notes         :Requiere aplicación octave y usar linea de comandos
 
-% limpiar variables
- clear
- disp("Una persona tiene su casa en un patio rectangular que mide 20 por 30 metros y desea construir una alberca de forma rectangular, cuya área sea de 40 metros cuadrados. Determina las dimensiones del rectángulo para que la cantidad de material que use en las paredes sea mínima."); 
+%limpiar variables
+  clear 
 % Minimo material para la alberca
-% Rango de 0..10 en i= 0.1
-  r=0:0.1:10;
-% Valor de la funcion (a, b)
-ar= @(ar)sqrt(40);
-ab=@(ab) 40/6.3246;
-% Función a plotear
-y= sqrt(40);
-z=40/6.3246;
+% Rango de 0..7 i= 0.1
+  r= 6.3:0.1:6.6;
+% Valor de la función 
+  ar= @(r) ((2*r)+(80/r));   
+% Funcion a plotear
+  z= (2*r) + (80./r);
 % Funcion para valor minimo
-resr = fminbnd(ar,0,10);
-resr1 = fminbnd(ab,0,10);
-% Dibujar r,y
-plot (r,y);
-
+  rest= fminbnd(ar,6.3,6.6);
+% Dibujar h,z
+  plot(r,z)
 % Titulo
-  title (['Minimo material A= ' num2str(ar (resr))]);
-% Etiqueta para a
-  xlabel(['Min a= ' num2str( ar(resr)) ] );
-% Etiqueta para b
-  ylabel(['Min b= ' num2str( ab(resr1))] );   
+  title(['Minimo material z= ' num2str(rest)]);
+% Etiqueta para x
+  xlabel(['Min z= ' num2str(rest) ] );
+% Etiqueta para y
+  ylabel(['Min z= ' num2str( ar(rest))] ); 
   
  
   
